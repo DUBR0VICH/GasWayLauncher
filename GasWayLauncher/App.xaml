@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:GasWayLauncher"
              StartupUri="View/LoginForm.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

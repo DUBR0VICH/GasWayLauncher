@@ -14,16 +14,17 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using GasWayLauncher.Classes;
+using GasWayLauncher.ViewModel;
 
 namespace GasWayLauncher.View
 {
-    /// <summary>
-    /// Логика взаимодействия для LoginForm.xaml
-    /// </summary>
     public partial class LoginForm : Window
     {
         private RegisterForm registerForm;
+        
         DataBase database = new DataBase();
+
+        public static string loginUser { get; internal set; }
 
         public LoginForm()
         {
@@ -129,7 +130,11 @@ namespace GasWayLauncher.View
             if (table.Rows.Count == 1)
             {
                 MainWindow mainWindow = new MainWindow();
-                mainWindow.AccLabel.Content = loginUser;
+                if (mainWindow.DataContext is MainViewModel viewModel)
+                {
+                    viewModel.LoggedInUser = loginUser; // Передаем логин в ViewModel
+                }
+                mainWindow.AccTextBlock.Text = loginUser;
                 mainWindow.Show();
                 this.Close();
             }

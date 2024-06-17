@@ -1,0 +1,7 @@
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\bin\Debug\WCF_Chat.dll.config
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\bin\Debug\WCF_Chat.dll
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\bin\Debug\WCF_Chat.pdb
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\obj\Debug\WCF_Chat.csproj.AssemblyReference.cache
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\obj\Debug\WCF_Chat.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\obj\Debug\WCF_Chat.dll
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\WCF_Chat\obj\Debug\WCF_Chat.pdb

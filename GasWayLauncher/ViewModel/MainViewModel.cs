@@ -1,48 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GasWayLauncher.View;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using System.Windows.Input;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GasWayLauncher.View;
 
 namespace GasWayLauncher.ViewModel
 {
-    internal class MainViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
-        private Page GasWay = new GasWayPage();
-        private Page DLC = new DLCPage();
-        private Page Download = new DownloadPage();
-        private Page _CurPage = new GasWayPage();
+        private Page _curPage = new GasWayPage();
+        private string _loggedInUser;
+
+        public MainViewModel()
+        {
+            GasWay = new GasWayPage();
+            Comments = new CommentsPage();
+            Download = new DownloadPage();
+        }
+
+        private Page GasWay { get; set; }
+        private Page Comments { get; set; }
+        private Page Download { get; set; }
 
         public Page CurPage
         {
-            get => _CurPage;
-            set => Set(ref _CurPage, value);
+            get => _curPage;
+            set => Set(ref _curPage, value);
         }
 
-        public ICommand OpenGasWayPage
+        public string LoggedInUser
         {
-            get
+            get => _loggedInUser;
+            set
             {
-                return new RelayCommand(() => CurPage = GasWay);
+                Set(ref _loggedInUser, value);
+                // Optionally, update the pages if they need to know the logged-in user
+                if (GasWay is IUserPage gasWayPage) gasWayPage.SetUser(_loggedInUser);
+                if (Comments is IUserPage commentsPage) commentsPage.SetUser(_loggedInUser);
+                if (Download is IUserPage downloadPage) downloadPage.SetUser(_loggedInUser);
             }
         }
-        public ICommand OpenDownloadPage
-        {
-            get
-            {
-                return new RelayCommand(() => CurPage = Download);
-            }
-        }
-        public ICommand OpenDLCPage
-        {
-            get
-            {
-                return new RelayCommand(() => CurPage = DLC);
-            }
-        }
+
+        public ICommand OpenGasWayPage => new RelayCommand(() => CurPage = GasWay);
+        public ICommand OpenDownloadPage => new RelayCommand(() => CurPage = Download);
+        public ICommand OpenCommentsPage => new RelayCommand(() => CurPage = Comments);
+    }
+
+    public interface IUserPage
+    {
+        void SetUser(string user);
     }
 }

@@ -1,0 +1,11 @@
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\ChatHost.exe.config
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\ChatHost.exe
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\ChatHost.pdb
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\WCF_Chat.dll
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\WCF_Chat.pdb
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\bin\Debug\WCF_Chat.dll.config
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\obj\Debug\ChatHost.exe
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\ChatHost\obj\Debug\ChatHost.pdb
