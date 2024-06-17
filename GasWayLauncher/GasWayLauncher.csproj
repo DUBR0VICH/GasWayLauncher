@@ -147,6 +147,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\DataBase.cs" />
+    <Compile Include="Classes\PasswordHelper.cs" />
     <Compile Include="Connected Services\ServiceChat\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -70,18 +70,20 @@ namespace GasWayLauncher.View
         //Код для бд регистрации
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-
             var login = tb1.Text;
             var password = tb2.Password;
 
-            string querystring = $"insert into UserInformation(UserName, Password) values('{login}', '{password}')";
+            // Хешируем пароль перед сохранением
+            var hashedPassword = PasswordHelper.HashPassword(password);
 
+            string querystring = "INSERT INTO UserInformation (UserName, Password) VALUES (@username, @password)";
             SqlCommand command = new SqlCommand(querystring, dataBase.getConnection());
+            command.Parameters.AddWithValue("@username", login);
+            command.Parameters.AddWithValue("@password", hashedPassword);
 
             dataBase.openConnection();
 
-            if(command.ExecuteNonQuery() == 1)
+            if (command.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Аккаунт успешно создан!");
                 LoginForm loginForm = new LoginForm();

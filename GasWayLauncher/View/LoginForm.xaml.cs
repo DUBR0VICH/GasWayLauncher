@@ -113,16 +113,17 @@ namespace GasWayLauncher.View
             string loginUser = tb1.Text;
             string passwordUser = tb2.Password;
 
+            // Хешируем введенный пользователем пароль для проверки
+            var hashedPassword = PasswordHelper.HashPassword(passwordUser);
+
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
 
-            // Создаем строку запроса с использованием параметров
+            // Используем параметры в запросе
             string queryString = "SELECT Id, UserName, Password FROM UserInformation WHERE UserName = @username AND Password = @password";
-
-            // Создаем команду SQL с параметрами
             SqlCommand command = new SqlCommand(queryString, database.getConnection());
             command.Parameters.AddWithValue("@username", loginUser);
-            command.Parameters.AddWithValue("@password", passwordUser);
+            command.Parameters.AddWithValue("@password", hashedPassword);
 
             adapter.SelectCommand = command;
             adapter.Fill(table);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,6 +18,28 @@ namespace GasWayLauncher.View
             InitializeComponent();
         }
 
+
+        //Переход по ссылке
+        private void OpenLink_Click(object sender, RoutedEventArgs e)
+        {
+            string url = "http://dubrovich.pythonanywhere.com";
+            OpenLink(url);
+        }
+        private void OpenLink(string url)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось открыть ссылку: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
 
         //Далее всё остальное
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
