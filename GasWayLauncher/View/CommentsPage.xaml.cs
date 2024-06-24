@@ -1,30 +1,27 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using GasWayLauncher.Classes;
+using GasWayLauncher.Model;
 using GasWayLauncher.ViewModel;
 
 namespace GasWayLauncher.View
 {
     public partial class CommentsPage : Page, IUserPage
     {
-        public string nickName;
-        private DataBase database;
+        public string NickName { get; set; }
 
         public CommentsPage()
         {
             InitializeComponent();
-            database = new DataBase();
             LoadComments();
         }
 
         public void SetUser(string user)
         {
-            nickName = user;
+            NickName = user;
         }
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
@@ -51,92 +48,68 @@ namespace GasWayLauncher.View
             }
         }
 
-
-        private void AddCommentToDatabase(string comment)
+        public void AddCommentToDatabase(string comment)
         {
-            try
+            using (var context = new ContextBD())
             {
-                // Получаем Id пользователя по имени пользователя
-                string queryString = "SELECT Id FROM UserInformation WHERE UserName = @username";
-                SqlCommand command = new SqlCommand(queryString, database.getConnection());
-                command.Parameters.AddWithValue("@username", nickName);
-
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable table = new DataTable();
-                adapter.Fill(table);
-
-                if (table.Rows.Count == 1)
+                var user = context.UserInfo.FirstOrDefault(u => u.UserName == NickName);
+                if (user != null)
                 {
-                    int userId = (int)table.Rows[0]["Id"];
-                    // Вставляем комментарий в базу данных
-                    string insertQuery = "INSERT INTO UserMessages (username_id, message) VALUES (@username_id, @message)";
-                    SqlCommand insertCommand = new SqlCommand(insertQuery, database.getConnection());
-                    insertCommand.Parameters.AddWithValue("@username_id", userId);
-                    insertCommand.Parameters.AddWithValue("@message", comment);
+                    var newComment = new UserMessages
+                    {
+                        username_id = user.Id,
+                        message = comment
+                    };
 
-                    database.openConnection();
-                    insertCommand.ExecuteNonQuery();
-                    database.closeConnection();
+                    context.UserMess.Add(newComment);
+                    context.SaveChanges();
                 }
                 else
                 {
                     MessageBox.Show("Пользователь не найден!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при добавлении комментария: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
 
-
-        private void LoadComments()
+        public void LoadComments()
         {
             CommentsPanel.Children.Clear();
-            try
+            using (var context = new ContextBD())
             {
-                string queryString = @"
-            SELECT UserInformation.UserName, UserMessages.message 
-            FROM UserMessages
-            JOIN UserInformation ON UserMessages.username_id = UserInformation.Id";
-                SqlCommand command = new SqlCommand(queryString, database.getConnection());
+                var comments = from msg in context.UserMess
+                               join user in context.UserInfo on msg.username_id equals user.Id
+                               select new { user.UserName, msg.message };
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable table = new DataTable();
-                adapter.Fill(table);
-
-                foreach (DataRow row in table.Rows)
+                foreach (var comment in comments)
                 {
-                    string user = row["UserName"].ToString();
-                    string message = row["message"].ToString();
-                    AddCommentToPanel(user, message);
+                    var textBlock = new TextBlock
+                    {
+                        Text = $"{comment.UserName}: {comment.message}",
+                        FontSize = 14,
+                        Margin = new Thickness(5),
+                        Foreground = new SolidColorBrush(Colors.Black)
+                    };
+                    CommentsPanel.Children.Add(textBlock);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при загрузке комментариев: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
-
-        private void AddCommentToPanel(string user, string comment)
+        private void CommentText_GotFocus(object sender, RoutedEventArgs e)
         {
-            TextBlock newComment = new TextBlock
+            if (CommentText.Text == "Введите комментарий...")
             {
-                Text = user + ": " + comment,
-                Margin = new Thickness(100, 10, 0, 10),
-                Background = new SolidColorBrush(Color.FromArgb(150, 0, 0, 0)),
-                Foreground = new SolidColorBrush(Color.FromArgb(255, 61, 206, 0)),
-                FontSize = 14,
-                Padding = new Thickness(10),
-                Height = Double.NaN,
-                Width = 400,
-                HorizontalAlignment = HorizontalAlignment.Left,
-                VerticalAlignment = VerticalAlignment.Top,
-                TextWrapping = TextWrapping.Wrap
-            };
+                CommentText.Text = string.Empty;
+                CommentText.Foreground = new SolidColorBrush(Colors.Black);
+            }
+        }
 
-            CommentsPanel.Children.Add(newComment);
+        private void CommentText_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(CommentText.Text))
+            {
+                CommentText.Text = "Введите комментарий...";
+                CommentText.Foreground = new SolidColorBrush(Colors.Gray);
+            }
         }
     }
 }

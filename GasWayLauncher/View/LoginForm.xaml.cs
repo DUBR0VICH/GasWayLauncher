@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Data;
-using System.Data.SqlClient;
 using GasWayLauncher.Classes;
+using System.Windows.Input;
+using GasWayLauncher.Model;
 using GasWayLauncher.ViewModel;
 
 namespace GasWayLauncher.View
@@ -21,8 +10,6 @@ namespace GasWayLauncher.View
     public partial class LoginForm : Window
     {
         private RegisterForm registerForm;
-        
-        DataBase database = new DataBase();
 
         public static string loginUser { get; internal set; }
 
@@ -30,6 +17,7 @@ namespace GasWayLauncher.View
         {
             InitializeComponent();
         }
+
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -86,7 +74,6 @@ namespace GasWayLauncher.View
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
             if (registerForm == null)
             {
                 registerForm = new RegisterForm();
@@ -105,45 +92,34 @@ namespace GasWayLauncher.View
             }
         }
 
-
-        //Код для логина
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        public void Button_Click_2(object sender, RoutedEventArgs e)
         {
             string loginUser = tb1.Text;
             string passwordUser = tb2.Password;
 
-            // Хешируем введенный пользователем пароль для проверки
             var hashedPassword = PasswordHelper.HashPassword(passwordUser);
 
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();
-
-            // Используем параметры в запросе
-            string queryString = "SELECT Id, UserName, Password FROM UserInformation WHERE UserName = @username AND Password = @password";
-            SqlCommand command = new SqlCommand(queryString, database.getConnection());
-            command.Parameters.AddWithValue("@username", loginUser);
-            command.Parameters.AddWithValue("@password", hashedPassword);
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            if (table.Rows.Count == 1)
+            using (var context = new ContextBD())
             {
-                MainWindow mainWindow = new MainWindow();
-                if (mainWindow.DataContext is MainViewModel viewModel)
+                var user = context.UserInfo
+                    .FirstOrDefault(u => u.UserName == loginUser && u.Password == hashedPassword);
+
+                if (user != null)
                 {
-                    viewModel.LoggedInUser = loginUser; // Передаем логин в ViewModel
+                    MainWindow mainWindow = new MainWindow();
+                    if (mainWindow.DataContext is MainViewModel viewModel)
+                    {
+                        viewModel.LoggedInUser = loginUser;
+                    }
+                    mainWindow.AccTextBlock.Text = loginUser;
+                    mainWindow.Show();
+                    this.Close();
                 }
-                mainWindow.AccTextBlock.Text = loginUser;
-                mainWindow.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Неправильный логин или пароль!");
+                else
+                {
+                    MessageBox.Show("Неправильный логин или пароль!");
+                }
             }
         }
-
     }
 }

@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\tests\\commentspagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\tests\\commentspagetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\tests\\registerformtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\tests\\registerformtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\tests\\passwordhelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\tests\\passwordhelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\tests\\loginformtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\tests\\loginformtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\view\\commentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\view\\commentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\view\\loginform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\view\\loginform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\view\\registerform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\view\\registerform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\model\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\model\\contextbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\model\\usermessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\model\\usermessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\model\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\model\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|d:\\projects\\gas way\\launcher\\projectfolder\\gaswaylauncher\\gaswaylauncher\\view\\loginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5982A125-A1BB-4B60-9710-DA6EF74F0C73}|GasWayLauncher\\GasWayLauncher.csproj|solutionrelative:gaswaylauncher\\view\\loginform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterFormTests.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\RegisterFormTests.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Tests\\RegisterFormTests.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\RegisterFormTests.cs",
+              "RelativeToolTip": "GasWayLauncher\\Tests\\RegisterFormTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:57:21.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginFormTests.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\LoginFormTests.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Tests\\LoginFormTests.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\LoginFormTests.cs",
+              "RelativeToolTip": "GasWayLauncher\\Tests\\LoginFormTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:57:10.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentsPageTests.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\CommentsPageTests.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Tests\\CommentsPageTests.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\CommentsPageTests.cs",
+              "RelativeToolTip": "GasWayLauncher\\Tests\\CommentsPageTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:57:01.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserMessages.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\UserMessages.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Model\\UserMessages.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\UserMessages.cs",
+              "RelativeToolTip": "GasWayLauncher\\Model\\UserMessages.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:40:33.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommentsPage.xaml.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\CommentsPage.xaml.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\View\\CommentsPage.xaml.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\CommentsPage.xaml.cs",
+              "RelativeToolTip": "GasWayLauncher\\View\\CommentsPage.xaml.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:26:24.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.xaml.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\LoginForm.xaml.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\View\\LoginForm.xaml.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\LoginForm.xaml.cs",
+              "RelativeToolTip": "GasWayLauncher\\View\\LoginForm.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:25:45.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterForm.xaml.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\RegisterForm.xaml.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\View\\RegisterForm.xaml.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\RegisterForm.xaml.cs",
+              "RelativeToolTip": "GasWayLauncher\\View\\RegisterForm.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:24:57.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PasswordHelperTests.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\PasswordHelperTests.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Tests\\PasswordHelperTests.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Tests\\PasswordHelperTests.cs",
+              "RelativeToolTip": "GasWayLauncher\\Tests\\PasswordHelperTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:56:53.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContextBD.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\ContextBD.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Model\\ContextBD.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\ContextBD.cs",
+              "RelativeToolTip": "GasWayLauncher\\Model\\ContextBD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:40:49.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserInformation.cs",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\UserInformation.cs",
+              "RelativeDocumentMoniker": "GasWayLauncher\\Model\\UserInformation.cs",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\Model\\UserInformation.cs",
+              "RelativeToolTip": "GasWayLauncher\\Model\\UserInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T19:40:43.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.xaml",
+              "DocumentMoniker": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\LoginForm.xaml",
+              "RelativeDocumentMoniker": "GasWayLauncher\\View\\LoginForm.xaml",
+              "ToolTip": "D:\\PROJECTS\\Gas Way\\Launcher\\ProjectFolder\\GasWayLauncher\\GasWayLauncher\\View\\LoginForm.xaml",
+              "RelativeToolTip": "GasWayLauncher\\View\\LoginForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T19:30:15.278Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

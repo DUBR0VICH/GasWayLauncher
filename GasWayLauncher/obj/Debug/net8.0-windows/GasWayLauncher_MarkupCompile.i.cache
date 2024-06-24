@@ -1,0 +1,20 @@
+﻿GasWayLauncher
+
+
+winexe
+C#
+.cs
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\net8.0-windows\
+GasWayLauncher
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\App.xaml
+61109268397
+2-589999875
+201879702853
+277-2039697465
+View\CommentsPage.xaml;View\DownloadPage.xaml;View\GasWayPage.xaml;View\LoginForm.xaml;View\MainWindow.xaml;View\RegisterForm.xaml;
+
+True
+

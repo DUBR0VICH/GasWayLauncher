@@ -72,8 +72,12 @@ D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Deb
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.Properties.Resources.resources
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.csproj.GenerateResource.cache
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.csproj.CoreCompileInputs.cache
-D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.csproj.CopyComplete
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.exe
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLauncher.pdb
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\obj\Debug\GasWayLa.48F13499.Up2Date
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\EntityFramework.dll
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\EntityFramework.xml
+D:\PROJECTS\Gas Way\Launcher\ProjectFolder\GasWayLauncher\GasWayLauncher\bin\Debug\EntityFramework.SqlServer.xml
